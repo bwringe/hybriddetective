@@ -5,7 +5,7 @@
 #' @param ReferencePopsData A file path to a either a NewHybrids or GENEPOP formatted file containing genotypes from the simulated ancestral populations. This can be the result of any of the freqbasedsim functions, or a file created using the function genepop_newhybrids from the package genepopedit
 #' @param UnknownIndivs A file path to a file containing the genotypes of the individuals to be analyzed for possible hybrid ancestry. This can either be a genepop format file, or a NewHybrids format file. Note - the number of loci and the names of the loci in ReferencePopsData and UnknownIndivs must be the same
 #' @param sim.pops.include Optional character vector list denoting which hybrid categories from the simulatedd data should be included in the output. The default is Pure Population 1 and Pure Population 2.
-#' @param outputName A character vector to be applied as the name of the output.
+#' @param output.name A character vector to be applied as the name of the output.
 #' @export
 #' @importFrom genepopedit subset_genepop genepop_flatten genepop_detective subset_genepop_aggregate
 #' @importFrom stringr str_split str_detect
