@@ -38,7 +38,7 @@ freqbasedsim_GTFreq <- function(GenePopData, pop.groups = c("PopA", "PopB"), out
 
   ## remove the first row which contains data normally ignored by GenePop, reformat data
   GenePop <- as.vector(GenePop)
-  GenePop <- GenePop[-1,]
+  GenePop <- GenePop$V1[-1 ]
   GenePop <- data.frame(data=GenePop,ind=1:length(GenePop))
   GenePop$data <- as.character(GenePop$data)
 
